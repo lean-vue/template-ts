@@ -34,3 +34,32 @@ Optional falls die Kombination Editorconfig/Prettier als Formatter eingesetzt we
 
 - [Editorconfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+Optional falls Linting-Fehler schon im Editor markiert werden sollen
+
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+### Settings
+
+- Default Formatter: Prettier
+- Format on Save: true
+
+## IntelliJ IDEA
+
+### Plugins
+
+- EditorConfig (Bundled in IntelliJ IDEA Ultimate)
+- Prettier (Marketplace)
+- ESLint (built-in)
+
+### Settings
+
+- Languages & Frameworks &rarr; JavaScript &rarr; Prettier
+
+  - Check: _On 'Reformat Code' action_
+  - Check: _On save_
+
+- Languages & Frameworks &rarr; JavaScript &rarr; Code Quality Tools &rarr; ESLint
+
+  - Stay with default settings
+  - Optionally check: _Run eslint --fix on save_
