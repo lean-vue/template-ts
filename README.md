@@ -1,2 +1,29 @@
 # Project: TypeScript Template
+
 > Opinionated Lean TypeScript Vue App Template
+
+## VS Code
+
+### Extensions
+
+Zwingend für Vue-Projekte mit TypeScript:
+
+Die Volar-Extension stellt Support für `*.vue`-Dateien bereit. Dabei stellt sie einen _Language-Server_ für bereit.
+Daneben existiert in VS Code noch ein normaler Language-Server für TypeScript-Dateien. Damit dieser auch
+`*.vue`-Dateien importieren kann (bzw. sowohl Vorschläge machen kann für solche Dateien und die exportierten
+Komponenten und außerdem einen solchen Import fehlerfrei durchgehen lässt), muss er mit einem Plugin erweitert
+werden: das [TypeScript Vue Plugin](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
+Alternativ und zur Zeit [empfohlen](https://github.com/vuejs/language-tools/discussions/471) ist es aber
+den _Take Over Mode_ einzuschalten. Damit übernimmt Volar auch die Rolle des _normalen_ Language-Server für
+TypeScript-Dateien - was zusätzlich VS Code entwas entschlackt.
+
+Ein dritter Weg `*.vue`-Dateien _importierbar_ zu machen, wäre ein [TypeScript-Shim](https://github.com/Code-Pop/Real-World-Vue-3-TypeScript/blob/main/src/shims-vue.d.ts).
+Das ist heutzutage aber eher _ungewöhnlich_.
+
+- [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - zusätzlich den Takeover-Mode aktivieren
+
+Optional falls die Kombination Editorconfig/Prettier als Formatter eingesetzt werden soll
+
+- [Editorconfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
