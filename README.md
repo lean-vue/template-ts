@@ -2,6 +2,13 @@
 
 > Opinionated Lean TypeScript Vue App Template
 
+## Projekt-Konfiguration
+
+- Build- und Dev-Server-Toolchain: [Vite](https://vitejs.dev/) mit Vue-Plugin
+- Code-Style und Formatting: Prettier/EditorConfig
+- Code-Quality-Analyse: [ESLint](https://eslint.org/) mit entsprechenden Tools/Konfigurationen
+- TypeScript-Konfiguration: Minimal und dokumentiert
+
 ## VS Code
 
 ### Extensions
