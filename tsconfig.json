@@ -2,7 +2,7 @@
   "compilerOptions": {
     // What APIs are we using?
     // ESBuild (and therefore Vite) configures the target - no need to configure it here
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
 
     // Best Practices
     "strict": true,
