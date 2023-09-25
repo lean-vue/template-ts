@@ -1,3 +1,24 @@
 {
+  "compilerOptions": {
+    // What APIs are we using?
+    // ESBuild (and therefore Vite) configures the target - no need to configure it here
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+
+    // Best Practices
+    "strict": true,
+    "verbatimModuleSyntax": true,
+
+    // ESBuild
+    // https://vuejs.org/guide/typescript/overview.html#configuring-tsconfig-json
+    // https://esbuild.github.io/content-types/#typescript
+    "esModuleInterop": true,
+    "isolatedModules": true,
+
+    // Needs to be set as of the combination of the settings above (and we are using a bundler - not pure tsc)
+    // https://www.totaltypescript.com/tsconfig-cheat-sheet
+    "moduleResolution": "Bundler",
+    "module": "ESNext"
+  },
+  // Must include *.vue files
   "include": ["src/**/*", "src/**/*.vue"]
 }
