@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    // TypeScript project: app
+    "composite": true,
+
+    // What APIs are we using?
+    // ESBuild (and therefore Vite) configures the target - no need to configure it here
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+
+    // Additionally typings
+    // - vite/client: Vite Client Types, https://vitejs.dev/guide/features.html#client-types
+    "types": ["vite/client"],
+
+    // Path Alias to simplify imports
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  // Must include *.vue files
+  "include": ["src/**/*", "src/**/*.vue", "types/**/*.d.ts"]
+}

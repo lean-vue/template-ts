@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    // TypeScript project: vite / node
+    "composite": true,
+
+    // Shorter legacy imports
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["vite.config.ts"]
+}

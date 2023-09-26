@@ -2,7 +2,7 @@
   "compilerOptions": {
     // What APIs are we using?
     // ESBuild (and therefore Vite) configures the target - no need to configure it here
-    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "lib": ["ES2023"],
 
     // Best Practices
     "strict": true, // Enforce code style
@@ -19,12 +19,10 @@
     // https://www.totaltypescript.com/tsconfig-cheat-sheet
     "moduleResolution": "Bundler",
     "module": "ESNext",
-    "noEmit": true,
-
-    // Additionally typings
-    // - vite/client: Vite Client Types, https://vitejs.dev/guide/features.html#client-types
-    "types": ["vite/client"]
+    "noEmit": true
   },
-  // Must include *.vue files
-  "include": ["src/**/*", "src/**/*.vue", "types/**/*.d.ts"]
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.vite.json" }
+  ]
 }
