@@ -5,8 +5,9 @@
     "lib": ["ES2023", "DOM", "DOM.Iterable"],
 
     // Best Practices
-    "strict": true,
-    "verbatimModuleSyntax": true,
+    "strict": true, // Enforce code style
+    "skipLibCheck": true, // Performance (und außerdem würde sonst der komplette node_modules-Ordner geprüft)
+    "verbatimModuleSyntax": true, // Enforce correct module/type imports
 
     // ESBuild
     // https://vuejs.org/guide/typescript/overview.html#configuring-tsconfig-json
@@ -17,7 +18,8 @@
     // Needs to be set as of the combination of the settings above (and we are using a bundler - not pure tsc)
     // https://www.totaltypescript.com/tsconfig-cheat-sheet
     "moduleResolution": "Bundler",
-    "module": "ESNext"
+    "module": "ESNext",
+    "noEmit": true
   },
   // Must include *.vue files
   "include": ["src/**/*", "src/**/*.vue"]
