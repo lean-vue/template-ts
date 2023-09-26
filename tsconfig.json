@@ -19,8 +19,12 @@
     // https://www.totaltypescript.com/tsconfig-cheat-sheet
     "moduleResolution": "Bundler",
     "module": "ESNext",
-    "noEmit": true
+    "noEmit": true,
+
+    // Additionally typings
+    // - vite/client: Vite Client Types, https://vitejs.dev/guide/features.html#client-types
+    "types": ["vite/client"]
   },
   // Must include *.vue files
-  "include": ["src/**/*", "src/**/*.vue"]
+  "include": ["src/**/*", "src/**/*.vue", "types/**/*.d.ts"]
 }
