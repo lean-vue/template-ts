@@ -1,17 +1,10 @@
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({});
-</script>
-
 <template>
-  <h1>Lean Vue App Template</h1>
+  <div>
+    <!-- Remove the below component to start a new project from scratch -->
+    <TemplateInfo />
+  </div>
 </template>
 
-<style scoped>
-h1 {
-  font-weight: 500;
-  text-align: center;
-  margin-top: 4rem;
-}
-</style>
+<script setup lang="ts">
+import TemplateInfo from './components/template-info.vue';
+</script>
