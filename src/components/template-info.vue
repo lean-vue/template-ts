@@ -15,7 +15,7 @@ import GithubInfo from './github-info.vue';
         <li>Vue Devtools</li>
       </ul>
     </div>
-    <GithubInfo />
+    <GithubInfo repo="lean-vue/template-ts" />
   </main>
 </template>
 

@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 
+const { repo } = defineProps<{ repo: string }>();
+
 const commits = ref(
   [] as {
     sha: string;
@@ -10,9 +12,7 @@ const commits = ref(
 );
 
 async function fetchGitCommits() {
-  const response = await fetch(
-    'https://api.github.com/repos/lean-vue/template-ts/commits?per_page=5',
-  );
+  const response = await fetch('https://api.github.com/repos/' + repo + '/commits?per_page=5');
   const data = await response.json();
   commits.value = data;
 }
@@ -21,6 +21,7 @@ onMounted(() => {
   fetchGitCommits();
 });
 </script>
+
 <template>
   <article>
     <h3>Last Git Commits</h3>
