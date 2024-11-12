@@ -1,6 +1,7 @@
 import jsRules from '@eslint/js';
 import tsRules from 'typescript-eslint';
 import vueRules from 'eslint-plugin-vue';
+import prettier from 'eslint-config-prettier';
 
 export default [
   {
@@ -18,4 +19,5 @@ export default [
       },
     },
   },
+  prettier,
 ];
