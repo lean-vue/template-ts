@@ -1,4 +1,5 @@
 import jsRules from '@eslint/js';
+import tsRules from 'typescript-eslint';
 
 export default [
   {
@@ -6,4 +7,5 @@ export default [
     files: ['src/**/*.ts'],
   },
   jsRules.configs['recommended'],
+  ...tsRules.configs['recommended'],
 ];
