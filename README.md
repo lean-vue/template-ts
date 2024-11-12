@@ -2,19 +2,23 @@
 
 > Opinionated Lean TypeScript Vue App Template
 
-## Clean Up
-
-Um mit dem Template ein neues Projekt zu beginnen, muss vom bereitgestellten
-Projekt lediglich der Import der `&ltTemplateInfo />`-Komponente in der
-`App.vue` entfernt werden. Die beiden Komponenten im `components`-Ordner
-können dann problemlos zusätzlich gelöscht werden.
-
 ## Projekt-Konfiguration
 
 - Build- und Dev-Server-Toolchain: [Vite](https://vitejs.dev/) mit Vue-Plugin
 - Code-Style und Formatting: Prettier/EditorConfig
 - Code-Quality-Analyse: [ESLint](https://eslint.org/) mit entsprechenden Tools/Konfigurationen
 - TypeScript-Konfiguration: Minimal und dokumentiert
+
+## NPM-Scripte
+
+- `typecheck`: Überprüft formal die Typisierungen (über `vue-tsc` - der original `tsc` versteht die SFC Syntax nicht).
+
+## Clean Up
+
+Um mit dem Template ein neues Projekt zu beginnen, muss vom bereitgestellten
+Projekt lediglich der Import der `&ltTemplateInfo />`-Komponente in der
+`App.vue` entfernt werden. Die beiden Komponenten im `components`-Ordner
+können dann problemlos zusätzlich gelöscht werden.
 
 ## VS Code
 
