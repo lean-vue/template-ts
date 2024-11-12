@@ -70,4 +70,11 @@ table {
 th {
   text-align: left;
 }
+td,
+th {
+  padding: 0.25rem 0.5rem;
+}
+td:nth-child(2) {
+  text-wrap: nowrap;
+}
 </style>

@@ -46,4 +46,17 @@ h2 {
   margin: 0;
   color: var(--text-contrast);
 }
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+li {
+  display: flex;
+  gap: 0 1rem;
+  margin-top: 0.5rem;
+}
+li::before {
+  content: '-';
+}
 </style>

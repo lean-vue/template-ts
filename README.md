@@ -2,6 +2,13 @@
 
 > Opinionated Lean TypeScript Vue App Template
 
+## Clean Up
+
+Um mit dem Template ein neues Projekt zu beginnen, muss vom bereitgestellten
+Projekt lediglich der Import der `&ltTemplateInfo />`-Komponente in der
+`App.vue` entfernt werden. Die beiden Komponenten im `components`-Ordner
+können dann problemlos zusätzlich gelöscht werden.
+
 ## Projekt-Konfiguration
 
 - Build- und Dev-Server-Toolchain: [Vite](https://vitejs.dev/) mit Vue-Plugin
