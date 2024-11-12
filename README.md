@@ -11,7 +11,9 @@
 
 ## NPM-Scripte
 
-- `typecheck`: Überprüft formal die Typisierungen (über `vue-tsc` - der original `tsc` versteht die SFC Syntax nicht).
+- `format`: Code Formatierung mit Prettier
+- `lint`: Code QA mit ESLint
+- `typecheck`: Überprüft formal die Typisierungen (über `vue-tsc` - der original `tsc` versteht die SFC Syntax nicht). Wird oft dem `build`-Script vorgeschoben.
 
 ## Clean Up
 
