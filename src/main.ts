@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import AppRoot from './app-root.vue';
+import AppRoot from './app.vue';
 
 // Styles
 import './assets/styles.css';
